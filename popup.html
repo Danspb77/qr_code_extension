@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple QR Code Generator</title>
+    <title>Simple random numbers  Generator</title>
     <style>
         #qrcode {
             margin-top: 20px;
@@ -12,14 +12,11 @@
     </style>
 </head>
 <body>
-    <h1>Simple QR Code Generator</h1>
-    <form id="qrForm">
-        <label for="textInput">Enter Text:</label>
-        <input type="text" id="textInput" required>
-        <button type="submit"> Code</button>
-    </form>
-    <canvas id="qrcode" width="210" height="210"></canvas>
-
+    <h1>Simple random numbers  Generator</h1>
+    <input type="number" id="min" required>
+    <input type="number" id="max" required>
+    <button type="submit"> Сгенерировать</button>
+   
     <script src="qrcode.js"></script>
 </body>
 </html>
