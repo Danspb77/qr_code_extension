@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>QR code  Extension</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple QR Code Generator</title>
+    <style>
+        #qrcode {
+            margin-top: 20px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-  <h1>Write your url here:</h1>
-  <label for="urlInput">Enter URL:</label>
-    <input type="url" id="urlInput" name="urlInput" placeholder="https://example.com" required>
-    <button type="submit">Submit</button>
-  </form>
-  <script src="popup.js"></script>
+    <h1>Simple QR Code Generator</h1>
+    <form id="qrForm">
+        <label for="textInput">Enter Text:</label>
+        <input type="text" id="textInput" required>
+        <button type="submit"> Code</button>
+    </form>
+    <canvas id="qrcode" width="210" height="210"></canvas>
+
+    <script src="qrcode.js"></script>
 </body>
 </html>
