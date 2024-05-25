@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple random numbers  Generator</title>
+    <title>Simple Random Number Generator</title>
     <style>
         #qrcode {
             margin-top: 20px;
@@ -12,11 +12,12 @@
     </style>
 </head>
 <body>
-    <h1>Simple random numbers  Generator</h1>
-    <input type="number" id="min" required>
-    <input type="number" id="max" required>
-    <button type="submit"> Сгенерировать</button>
-   
-    <script src="qrcode.js"></script>
+    <h1>Simple Random Number Generator</h1>
+    <input type="number" id="min" placeholder="Minimum" required>
+    <input type="number" id="max" placeholder="Maximum" required>
+    <button type="submit" id="generate">Generate</button>
+    <p id="result"></p>
+
+    <script src="popup.js"></script>
 </body>
 </html>
