@@ -17,5 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
         resultElement.textContent = `Random Number: ${randomNumber}`;
+
+        // Copy the random number to the clipboard
+        navigator.clipboard.writeText(randomNumber.toString()).then(() => {
+            console.log('Random number copied to clipboard');
+        }).catch(err => {
+            console.error('Could not copy text: ', err);
+        });
     });
 });
